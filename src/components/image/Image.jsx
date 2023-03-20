@@ -16,14 +16,14 @@ const Image = (props) => {
 
     const getMyData = async () => {
         try {
-            console.log(text);
+            // console.log(text);
             const res = await axios.get(`https://pixabay.com/api/?key=34309567-2686cbea63c413815a6d0851e&&image_type=photo&q=${text}&per_page=100`);
-            console.log(res.data);
+            // console.log(res.data);
 
-            console.log(text);
+            // console.log(text);
             setimages(res.data.hits);
             setcount(res.data.totalHits);
-            console.log(images);
+            // console.log(images);
         } catch (error) {
             console.log(error.message);
         }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Images = (props) => {
-    console.log(props.im);
+    // console.log(props.im);
     return (
       
       <div className="flex justify-center p-2 mx-auto">
