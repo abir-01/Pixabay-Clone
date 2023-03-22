@@ -10,7 +10,7 @@ const Images = (props) => {
               <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                   <img
                       className="rounded-lg"
-                      src={props.im.largeImageURL}
+                      src={props.im.webformatURL}
                       alt="" />
               </a>
               

@@ -2,9 +2,8 @@ import React from 'react'
 import './header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import Navbar from '../Navbar/Navbar';
-import Image from '../image/Image';
 import { useState } from 'react';
-import { useEffect,useCallback } from 'react';
+import { useCallback } from 'react';
 
 
 const Header = ({ text, onTextChange }) => {
@@ -13,20 +12,8 @@ const Header = ({ text, onTextChange }) => {
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
-    // text && <Image q={text} />
-    // console.log(text+'submitted');
-    // settext(e.target.value);
-    // settext1(text);
     onTextChange(text1)
   })
-
-  // useEffect(() => {
-    // const change = (tex) => {
-    //   settext(tex)
-    //   console.log(tex);
-    //   return;
-    // }
-  // }, [])
 
   const handleInputChange = useCallback((e) => {
     onTextChange(e.target.value)
@@ -34,9 +21,6 @@ const Header = ({ text, onTextChange }) => {
   }, [onTextChange])
   
 
-  
-
-  // change('hghgfg');
 
   return (
     <>
@@ -59,11 +43,6 @@ const Header = ({ text, onTextChange }) => {
                   <input type="text"  onChange={handleInputChange} 
                     
                   placeholder="Enter your search here" className=" focus:ring-0 outline-none border-none flex-1  py-4 px-0 text-gray-700 " />
-                {/* <select id="Com" className="text-base  text-gray-800 outline-none border-none px-4 py-2 rounded-full">
-                  <option value="com" selected>All Images</option>
-                  <option value="net">Videos</option>
-                  <option value="org">Music</option>
-                </select> */}
                 <label htmlFor="underline_select" className="sr-only">Underline select</label>
                 <select id="underline_select" className="block py-2.5 px-0  text-lg text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
                   <option   value="All Images">All Images</option>
