@@ -22,7 +22,7 @@ const MainPage = () => {
                 <Options />
                 <Routes>
 
-                    <Route exact path='/Pixabay-Clone/' element={
+                    <Route exact path='/' element={
                         <>
                             <OptionsPhotos text={text} onTextChange={settext} />
                             <Image />

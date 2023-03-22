@@ -34,7 +34,7 @@ export default function Navbar() {
         <header className="bg-transparent sticky ">
             <nav className="mx-auto  flex max-w-10xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="#" className="-m-1.5 p-1.5">
+                    <a href="/" className="-m-1.5 p-1.5">
                         {/* <span Your Company</span> */}
                         <img className="h-10 w-auto mb-4" style={{
                             display: 'inline'
