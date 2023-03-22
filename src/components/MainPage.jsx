@@ -3,7 +3,7 @@ import Header from './header/Header'
 import Options from './Options/Options'
 import OptionsPhotos from './Tags/OptionsPhotos'
 import OptionsVideos from './Tags/OptionsVideos'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom"
 import Image from './image/Image'
 import Video from './Video/Video'
 
