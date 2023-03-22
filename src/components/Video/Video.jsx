@@ -7,6 +7,7 @@ const Video = (props) => {
 
     // console.log(props);
     const [videos, setimages] = useState([])
+    const [count, setcount] = useState(0)
 
     const getMyData = async () => {
         try {

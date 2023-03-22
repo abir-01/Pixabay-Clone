@@ -16,7 +16,7 @@ const Options = () => {
       <div className="options container flex mx-auto justify-center items-center overflow-scroll  my-6 ">
           <div className="photos  sm:ml-12 lg:mx-8 lg:my-10 md:my-6 text-gray-600">
 
-              <Link to="/Pixabay-Clone/Photos"className=' font-medium  md:py-1 ml-1'><CameraAltIcon /> Photos</Link>
+              <Link to="/Photos"className=' font-medium  md:py-1 ml-1'><CameraAltIcon /> Photos</Link>
 
           </div>
           {/* <div className="Illustrations  sm:mx-2 lg:mx-8 lg:my-10 md:my-6 text-gray-600">
@@ -25,7 +25,7 @@ const Options = () => {
           </div> */}
           <div className="Videos  sm:mx-2 lg:mx-8 lg:my-10 md:my-6 text-gray-600">
 
-              <Link to='/Pixabay-Clone/Videos'  className=' font-medium  md:py-1 ml-1'><VideocamIcon /> Videos</Link>
+              <Link to='/Videos'  className=' font-medium  md:py-1 ml-1'><VideocamIcon /> Videos</Link>
           </div>
           {/* <div className="Music  sm:mx-2 lg:mx-8 lg:my-10 md:my-6 text-gray-600">
 

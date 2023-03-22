@@ -17,7 +17,7 @@ const Image = (props) => {
     const getMyData = async () => {
         try {
             // console.log(text);
-            const res = await axios.get(`https://pixabay.com/api/?key=34309567-2686cbea63c413815a6d0851e&&image_type=photo&q=${text}&per_page=100`);
+            const res = await axios.get(`https://pixabay.com/api/?key=34309567-2686cbea63c413815a6d0851e&&image_type=photo&q=${props.text}&per_page=100`);
             console.log(res.data);
 
             // console.log(text);

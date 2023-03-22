@@ -25,18 +25,18 @@ const MainPage = () => {
                     <Route exact path='/' element={
                         <>
                             <OptionsPhotos text={text} onTextChange={settext} />
-                            <Image />
+                            <Image text={text} />
                         </>
                     }></Route>
 
-                    <Route exact path='/Pixabay-Clone/Photos' element={
+                    <Route exact path='/Photos' element={
                         <>
                             <OptionsPhotos text={text} onTextChange={settext} />
-                            <Image />
+                            <Image text={ text} />
                         </>
                     }></Route>
 
-                    <Route exact path='/Pixabay-Clone/Videos' element={
+                    <Route exact path='/Videos' element={
                         <>
                             <OptionsVideos text={text} onTextChange={settext} />
                             {console.log(text)}
