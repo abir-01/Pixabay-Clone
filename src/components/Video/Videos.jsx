@@ -1,5 +1,5 @@
 import React from 'react';
-import HoverVideoPlayer from 'react-hover-video-player';
+import HoverVideoPlayer from 'react-hover-video-player'
 
 const Videos = (props) => {
     // console.log(props.im);

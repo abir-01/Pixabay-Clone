@@ -23,7 +23,7 @@ const Image = (props) => {
             // console.log(text);
             setimages(res.data.hits);
             setcount(res.data.totalHits);
-            // console.log(images);
+            console.log(images);
         } catch (error) {
             console.log(error.message);
         }

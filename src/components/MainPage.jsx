@@ -11,7 +11,7 @@ const MainPage = () => {
 
 
     const [text, settext] = useState('nature')
-    const [item, setitem] = useState('photos')
+    // const [item, setitem] = useState('photos')
 
 
 
