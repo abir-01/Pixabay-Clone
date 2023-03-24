@@ -56,7 +56,7 @@ const Header = ({ text, onTextChange, item,onitemchange}) => {
 
                     placeholder="Enter your search here" className=" focus:ring-0 outline-none border-none flex-1  py-4 px-0 text-gray-700 " />
                   <label htmlFor="underline_select" className="sr-only">Underline select</label>
-                  <select id="underline_select" defaultValue={`Pixabay-Clone/#/Photos`} className="block py-2.5 px-0  text-lg text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+                  <select id="underline_select" defaultValue={`Pixabay-Clone/#/Photos`} className="block py-2.5 px-0  text-lg text-gray-500 bg-transparent border-0  border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
                     onChange={(e) => {
                       // console.log(e.target.value),
                       window.location.href=`/${e.target.value}`
