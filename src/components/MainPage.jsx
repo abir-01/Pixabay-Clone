@@ -29,14 +29,14 @@ const MainPage = () => {
                         </>
                     }></Route>
 
-                    <Route exact path='/Photos' element={
+                    <Route exact path='Photos' element={
                         <>
                             <OptionsPhotos text={text} onTextChange={settext} />
                             <Image text={ text} />
                         </>
                     }></Route>
 
-                    <Route exact path='/Videos' element={
+                    <Route exact path='Videos' element={
                         <>
                             <OptionsVideos text={text} onTextChange={settext} />
                             {console.log(text)}
