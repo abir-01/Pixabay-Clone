@@ -9,7 +9,6 @@ import MainPage from './components/MainPage'
 
 const App = () => {
 
-const [text, settext] = useState('  sdcbjhvb\svd')
 
   return (
     <>

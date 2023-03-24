@@ -12,7 +12,7 @@ const Video = (props) => {
     const getMyData = async () => {
         try {
             // console.log(text);
-            const res = await axios.get(`https://pixabay.com/api/videos/?key=34309567-2686cbea63c413815a6d0851e&&&q=${props.text}&per_page=100`);
+            const res = await axios.get(`https://pixabay.com/api/videos/?key=34309567-2686cbea63c413815a6d0851e&&&q=${props.text}&per_page=50`);
             // console.log(res.data);
 
             // console.log(text);
@@ -28,7 +28,7 @@ const Video = (props) => {
     useEffect(() => {
 
         getMyData();
-    }, [props.text]);
+    }, [props.text,props.item]);
 
 
     return (

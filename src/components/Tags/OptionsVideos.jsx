@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 
 import './Options.css'
 
-const OptionsVideos = ({ text, onTextChange }) => {
+const OptionsVideos = ({ text, onTextChange,item }) => {
 
     const handlewallpaper = useCallback(() => {
         onTextChange("wallpaper")
