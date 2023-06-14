@@ -11,13 +11,6 @@ import { NavLink } from 'react-router-dom'
 
 const Header = ({ text, onTextChange, item,onitemchange}) => {
 
-  // const history = createHashHistory()
-  // const router = useRouter();
-
-  // function handleChange(e) {
-  //   router.push(`/${e.target.value}`)
-  // }
-
 
   const [text1, settext1] = useState('')
 
@@ -65,19 +58,7 @@ const Header = ({ text, onTextChange, item,onitemchange}) => {
                     <option value={`Pixabay-Clone/#/Photos`}  > All Images</option>
                     <option value={`Pixabay-Clone/#/Videos`} > All Videos</option>
                     {/* <option value="Music">Music</option> */}
-                    {/* <Dropdown title="" >
-
-
-                      <Dropdown.Item as="a" href=
-                        "/">
-                        All Images
-                      </Dropdown.Item>
-
-                      <Dropdown.Item as="a" href=
-                        "Videos">
-                        All Videos
-                      </Dropdown.Item>
-                    </Dropdown> */}
+                    
                   </select>
 
 

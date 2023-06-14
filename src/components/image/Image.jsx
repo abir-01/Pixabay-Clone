@@ -1,9 +1,10 @@
 import React from 'react'
-import { useEffect,useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Header from '../header/Header';
 import Options from '../Tags/OptionsPhotos';
 import Images from '../Images';
+import './Image.css'
 
 const Image = (props) => {
 
@@ -12,7 +13,7 @@ const Image = (props) => {
     const [count, setcount] = useState(0)
     const [text, settext] = useState('nature')
 
-    
+
 
     const getMyData = async () => {
         try {
@@ -31,21 +32,28 @@ const Image = (props) => {
 
     // NOTE:  calling the function
     useEffect(() => {
-        
+
         getMyData();
-    }, [props.text,props.item]);
-    
-    
-  return (
-      <>
-          {images.length !== 0 && <div className="flex flex-row flex-wrap justify-center align-center container py-8 my-10 mx-auto">
-              {images.map(image => (
-                    // console.log(image),
-                  <Images im={image} key={image.id} />
-              ))}
-          </div>}
-      </>
-  )
+    }, [props.text, props.item]);
+
+
+    return (
+        <>
+            {images.length !== 0 &&
+
+                <div className="container mx-auto">
+
+                    {images.map(image => (
+                        <a href={image.largeImageURL} target='_blank' data-te-ripple-init data-te-ripple-color="light">
+                            <div className="box">
+                                <img src={image.webformatURL} alt="" />
+                            </div>
+                        </a>
+                    ))}
+
+                </div>}
+        </>
+    )
 }
 
 export default Image

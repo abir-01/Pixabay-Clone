@@ -1,7 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import Videos from './Videos';
+// import Videos from './Videos';
+import '../image/Image.css'
+import HoverVideoPlayer from 'react-hover-video-player'
 
 const Video = (props) => {
 
@@ -28,18 +30,42 @@ const Video = (props) => {
     useEffect(() => {
 
         getMyData();
-    }, [props.text,props.item]);
+    }, [props.text, props.item]);
 
 
     return (
         <>
 
-            {videos.length !== 0 && <div className="flex flex-row flex-wrap justify-center align-center container py-8 my-10 mx-auto">
-                {videos.map(video => (
-                    // console.log(image),
-                    <Videos vi={video} key={video.id} />
-                ))}
-            </div>}
+            {videos.length !== 0 &&
+
+                <div className="container mx-auto">
+                    {videos.map(video => (
+                        <a href={video.videos.large.url} target='_blank' data-te-ripple-init data-te-ripple-color="light">
+                            <div className="box" >
+                                <HoverVideoPlayer
+                                    videoSrc={video.videos.tiny.url}
+                                    pausedOverlay={
+                                        <img
+                                            src={`https://i.vimeocdn.com/video/${video.picture_id}_960x540.jpg`}
+                                            alt=""
+                                            style={{
+                                                // Make the image expand to cover the video's dimensions
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                            }}
+                                        />
+                                    }
+                                    loadingOverlay={
+                                        <div className="loading-overlay">
+                                            <div className="loading-spinner" />
+                                        </div>
+                                    }
+                                />
+                            </div>
+                        </a>
+                    ))}
+                </div >}
         </>
     )
 }
